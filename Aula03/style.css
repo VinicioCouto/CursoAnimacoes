@@ -22,19 +22,24 @@ body{
     max-width: 500px;
     background-color: transparent;
     padding: 35px;
-    backdrop-filter: blur(10px);
-    border: solid 2px white;
+    backdrop-filter: blur(0px);
     border-radius: 25px;
     overflow: hidden;
+    transition: 1s ease-in-out;
 }
 
 .text{
     color: white;
     position: relative;
     top: 200px;
-    transition: top 1s;
+    transition: top 1s ease-in-out;
 }
 
 .container:hover .text{
     top: 0;
+}
+
+.container:hover{
+    backdrop-filter: blur(10px);
+    border: solid 2px white;
 }
