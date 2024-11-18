@@ -25,8 +25,16 @@ body{
     backdrop-filter: blur(10px);
     border: solid 2px white;
     border-radius: 25px;
+    overflow: hidden;
 }
 
 .text{
     color: white;
+    position: relative;
+    top: 200px;
+    transition: top 1s;
+}
+
+.container:hover .text{
+    top: 0;
 }
