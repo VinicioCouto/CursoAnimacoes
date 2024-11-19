@@ -20,7 +20,7 @@ body{
     border: 12px solid blue;
     border-top: 12px solid transparent;
     border-radius: 50%;
-    animation: loading 1s ease-in-out infinite ;
+    animation: loading 1s ease-in-out infinite;
 }
 
 @keyframes loading{
