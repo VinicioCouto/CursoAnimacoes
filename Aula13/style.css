@@ -11,3 +11,26 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+.button{
+    padding: 60px 100px;
+    background-color: #282828;
+    color: #fff;
+    border-radius: 120px;
+    text-decoration: none;
+    position: relative;
+}
+
+.button span{
+    font-size: 30px;
+    position: relative;
+}
+
+.button::before{
+    content: '';
+    background-color: blue;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border-radius: 50%;
+}
