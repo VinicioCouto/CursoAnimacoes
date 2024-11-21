@@ -3,3 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-port{
+    width: 360px;
+    height: 560px;
+    background-image: url(index.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 4s ease-in-out;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
