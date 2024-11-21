@@ -19,6 +19,7 @@ body{
     border-radius: 120px;
     text-decoration: none;
     position: relative;
+    overflow: hidden;
 }
 
 .button span{
@@ -29,8 +30,17 @@ body{
 .button::before{
     content: '';
     background-color: blue;
-    width: 60px;
-    height: 60px;
+    width: 0;
+    height: 0;
     position: absolute;
+    top: var(--eixoY);
+    left: var(--eixoX);
     border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s ease-in-out;
+}
+
+.button:hover::before{
+    width: 1000px;
+    height: 1000px;
 }
