@@ -26,6 +26,14 @@ body{
     overflow: hidden;
 }
 
+.link i{
+    transition: 0.2s ease-in-out;
+}
+
+.link:hover i{
+    transform: scale(1.2);
+}
+
 .link-1{
     color: rgb(100, 247, 198);
 }
@@ -46,9 +54,19 @@ body{
     position: absolute;
     left: -100px;
     top: 100%;
-    background-color: blue;
 }
 
+.link-1::before{
+    background-color: rgb(255, 0, 200);
+}
+
+.link-2::before{
+    background-color: rgb(0, 255, 242);
+}
+
+.link-3::before{
+    background-color: rgb(255, 183, 0);
+}
 
 .link:hover::before{
     animation: desloca .5s;
