@@ -3,3 +3,45 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+    color: white;
+}
+
+.txt-animado{
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.txt-animado span{
+    position: relative;
+}
+
+.txt-animado span::before{
+    content: '';
+    color: #ff007b;
+    animation: palavras 20s infinite;
+}
+
+@keyframes palavras {
+    0%,20%{
+        content: "deixou o like?";
+    }
+    21%,40%{
+        content: "ativou o sininho?";
+    }
+    41%,60%{
+        content: "já comentou";
+    }
+    61%,80%{
+        content: "já se inscreveu";
+    }
+    81%,100%{
+        content: "já compartilhou?";
+    }
+}
